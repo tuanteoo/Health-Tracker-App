@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/welcome_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_welcome"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/welcome_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_image"
+        android:layout_alignStart="@+id/welcome_image"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/dm_sans"
+        android:text="Welcome to"
+        android:textColor="#061428"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/welcome_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text1"
+        android:layout_alignStart="@+id/welcome_image"
+        android:fontFamily="@font/dm_sans"
+        android:text="your personal"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#061428"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/welcome_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text2"
+        android:layout_alignStart="@+id/welcome_image"
+        android:fontFamily="@font/dm_sans"
+        android:text="health tracker"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#061428"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/welcome_btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_next"
+        android:layout_alignEnd="@+id/welcome_image"
+        android:layout_below="@id/welcome_text3"
+        android:layout_marginTop="60dp"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

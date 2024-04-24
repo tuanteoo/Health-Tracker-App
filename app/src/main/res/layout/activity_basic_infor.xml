@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BasicInfActivity">
+
+    <TextView
+        android:id="@+id/basic_in4_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give us some basic"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textColor="#061428"
+        android:fontFamily="@font/dm_sans_bold"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/basic_in4_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="information"
+        android:textSize="30sp"
+        android:textColor="#061428"
+        android:fontFamily="@font/dm_sans_bold"
+        android:layout_below="@+id/basic_in4_text1"
+        android:layout_alignStart="@+id/basic_in4_text1"
+        tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:id="@+id/group_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/basic_in4_text2"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/basic_in4_man"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:background="@drawable/shape_select_people"
+            android:src="@drawable/icon_man"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerInside"
+            tools:ignore="ContentDescription" >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:layout_below="@+id/basic_in4_man"
+            android:layout_alignStart="@+id/basic_in4_man"
+            android:layout_alignEnd="@+id/basic_in4_man"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/dm_sans"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/basic_in4_check_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:layout_alignStart="@+id/basic_in4_man"
+            android:layout_alignEnd="@+id/basic_in4_man"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/basic_in4_woman"
+            android:layout_width="132dp"
+            android:layout_height="132dp"
+            android:layout_toEndOf="@+id/basic_in4_man"
+            android:src="@drawable/icon_woman"
+            android:background="@drawable/shape_people"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerInside"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:layout_below="@+id/basic_in4_woman"
+            android:layout_alignStart="@+id/basic_in4_woman"
+            android:layout_alignEnd="@+id/basic_in4_woman"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/dm_sans"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/basic_in4_check_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:layout_alignStart="@+id/basic_in4_woman"
+            android:layout_alignEnd="@+id/basic_in4_woman"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_gender"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:id="@+id/basic_in4_textHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Height"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basic_in4_textHeight">
+
+            <ImageView
+                android:id="@+id/icon_smallheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/smallheight"
+                android:layout_alignBottom="@+id/icon_largeheight"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon_largeheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/largeheight"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                tools:ignore="ContentDescription" />
+
+            <SeekBar
+                android:id="@+id/basic_in4_seekbar_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/ellipse"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon_largeheight"/>
+
+            <TextView
+                android:id="@+id/text_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50cm"
+                android:textSize="16sp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:layout_above="@+id/icon_smallheight"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50cm"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/basic_in4_seekbar_height"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500cm"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/basic_in4_seekbar_height"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_height"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:id="@+id/basic_in4_textWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basic_in4_textWeight">
+
+            <ImageView
+                android:id="@+id/icon_thin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/smallheight"
+                android:layout_alignBottom="@+id/icon_fat"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/faticon"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentEnd="true"
+                tools:ignore="ContentDescription" />
+
+            <SeekBar
+                android:id="@+id/basic_in4_seekbar_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/ellipse"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon_fat"/>
+
+            <TextView
+                android:id="@+id/text_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50kg"
+                android:textSize="16sp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:layout_above="@+id/icon_thin"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20kg"
+                android:fontFamily="@font/dm_sans"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/basic_in4_seekbar_weight"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200kg"
+                android:fontFamily="@font/dm_sans"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/basic_in4_seekbar_weight"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/basic_in4_btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_next"
+        android:layout_alignEnd="@+id/group_weight"
+        android:layout_below="@id/group_weight"
+        android:layout_marginTop="80dp"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="137dp"
+        android:layout_height="120dp"
+        android:padding="15dp"
+        android:background="@drawable/layout_item_health_factors"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/rela_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/item_health_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_heart"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:id="@+id/item_health_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart Rate"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/item_health_icon"
+                android:layout_centerVertical="true"
+                android:textColor="#D2416E"
+                android:layout_marginStart="10dp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@id/rela_top">
+
+            <TextView
+                android:id="@+id/item_value_factors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="78"
+                android:textColor="#D2416E"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/item_measure_factors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bpm"
+                android:textColor="#D2416E"
+                android:textSize="16sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignBottom="@id/item_value_factors"
+                android:layout_toEndOf="@+id/item_value_factors"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
