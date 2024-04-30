@@ -1,24 +1,16 @@
 package com.example.healthtracker.Model;
 
 public class HealthFactorsModel {
-    String image, nameFactor,measure;
-    int value;
+    String nameFactor,measure,value;
+    int image;
 
     public HealthFactorsModel() {
     }
 
-    public HealthFactorsModel(String image, String nameFactor, int value, String measure) {
-        this.image = image;
+    public HealthFactorsModel(String nameFactor, String measure, String value, int image) {
         this.nameFactor = nameFactor;
-        this.value = value;
         this.measure = measure;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
+        this.value = value;
         this.image = image;
     }
 
@@ -30,19 +22,27 @@ public class HealthFactorsModel {
         this.nameFactor = nameFactor;
     }
 
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     public String getMeasure() {
         return measure;
     }
 
     public void setMeasure(String measure) {
         this.measure = measure;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
     }
 }

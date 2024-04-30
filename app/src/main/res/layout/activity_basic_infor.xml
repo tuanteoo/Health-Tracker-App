@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Give us some basic"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:textSize="30sp"
         android:textColor="#061428"
         android:fontFamily="@font/dm_sans_bold"
@@ -117,11 +117,95 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/group_height"
+        android:id="@+id/group_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/group_gender"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:id="@+id/basic_in4_textAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/basic_in4_textAge">
+
+            <ImageView
+                android:id="@+id/icon_young"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/smallheight"
+                android:layout_alignBottom="@+id/icon_old"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/icon_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/largeheight"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                tools:ignore="ContentDescription" />
+
+            <SeekBar
+                android:id="@+id/basic_in4_seekbar_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/ellipse"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/icon_old"/>
+
+            <TextView
+                android:id="@+id/text_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:textSize="16sp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:layout_above="@+id/icon_young"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/basic_in4_seekbar_age"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/basic_in4_seekbar_age"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_age"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="40dp">
 
@@ -205,7 +289,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/group_height"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:layout_marginStart="40dp">
 
@@ -253,7 +337,7 @@
                 android:id="@+id/text_weight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="50kg"
+                android:text="20kg"
                 android:textSize="16sp"
                 android:fontFamily="@font/dm_sans_bold"
                 android:layout_above="@+id/icon_thin"
@@ -293,7 +377,7 @@
         android:src="@drawable/button_next"
         android:layout_alignEnd="@+id/group_weight"
         android:layout_below="@id/group_weight"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         tools:ignore="ContentDescription" />
 
 </RelativeLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "561615614982",
+    "firebase_url": "https://test-b40c3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "test-b40c3",
+    "storage_bucket": "test-b40c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561615614982:android:62efeb56023bea4a82bf87",
+        "android_client_info": {
+          "package_name": "com.example.healthtracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9dBS67jpDwxq-ZmnBq7axsQf67kIk2YU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

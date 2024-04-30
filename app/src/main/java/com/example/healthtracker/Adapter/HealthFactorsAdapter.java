@@ -1,5 +1,7 @@
 package com.example.healthtracker.Adapter;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.healthtracker.Model.HealthFactorsModel;
 import com.example.healthtracker.R;
+import com.google.android.material.transition.Hold;
 
 import java.util.ArrayList;
 
@@ -30,12 +33,38 @@ public class HealthFactorsAdapter extends RecyclerView.Adapter<HealthFactorsAdap
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-//        Glide.with(holder.itemView.getContext())
-//                .load(healthFactorsModels.get(position).getImage())
-//                .into(holder.icon_factors);
+
+        HealthFactorsModel healthFactorsModel = healthFactorsModels.get(position);
+
+        switch (healthFactorsModel.getNameFactor()) {
+            case "Exercise":
+            case "Stress":
+                replaceLayout(holder, "#F1ECFA", "#7042C9");
+                break;
+            case "Walking":
+            case "Sedentary":
+                replaceLayout(holder, "#E7F7F7", "#0DB1AD");
+                break;
+            case "Sleep":
+            case "Physical Activity":
+                replaceLayout(holder, "#E8F2FA", "#197BD2");
+                break;
+            case "Blood Pressure":
+                holder.value_factors.setTextSize(28);
+                break;
+        }
+
+        holder.icon_factors.setImageResource(healthFactorsModels.get(position).getImage());
         holder.name_factors.setText(healthFactorsModels.get(position).getNameFactor());
         holder.value_factors.setText(String.valueOf(healthFactorsModels.get(position).getValue()));
         holder.measure_factors.setText(healthFactorsModels.get(position).getMeasure());
+    }
+
+    private void replaceLayout(ViewHolder holder,String colorLayout,String colorText){
+        holder.itemView.getBackground().setColorFilter(Color.parseColor(colorLayout), PorterDuff.Mode.SRC_ATOP);
+        holder.name_factors.setTextColor(Color.parseColor(colorText));
+        holder.value_factors.setTextColor(Color.parseColor(colorText));
+        holder.measure_factors.setTextColor(Color.parseColor(colorText));
     }
 
     @Override

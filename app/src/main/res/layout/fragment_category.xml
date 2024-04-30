@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CategoryFragment">
+    
+    <TextView
+        android:id="@+id/category_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_lifestyle_information"
+        android:fontFamily="@font/dm_sans_bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/category_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_text1"
+        android:text="@string/infomation"
+        android:fontFamily="@font/dm_sans_bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rela_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category_text2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/category_textdiabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diabetes"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/group_option_diabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_textdiabetes"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/category_diabetes_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_diabetes_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/category_textAlcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alcohol Consumption"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/group_option_diabetes"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/group_option_alcohol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_textAlcohol"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/category_alcohol_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_alcohol_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/category_textDiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diet"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/group_option_alcohol"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/group_option_diet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_textDiet"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/category_diet_unhealthy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unhealthy"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_diet_average"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_diet_healthy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Healthy"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/category_textMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication Use"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/group_option_diet"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/group_option_medication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_textMedication"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/category_medication_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_medication_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginStart="50dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+
+    </RelativeLayout>
+</RelativeLayout>
