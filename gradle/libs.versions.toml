@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.1"
+dialogplus = "1.11"
 firebaseBom = "32.8.1"
 glide = "4.16.0"
 junit = "4.13.2"
@@ -12,8 +13,10 @@ constraintlayout = "2.1.4"
 playServicesMaps = "18.2.0"
 googleServices = "4.4.1"
 firebaseDatabase = "20.3.1"
+volley = "1.2.1"
 
 [libraries]
+dialogplus = { module = "com.orhanobut:dialogplus", version.ref = "dialogplus" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -26,6 +29,7 @@ constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayo
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

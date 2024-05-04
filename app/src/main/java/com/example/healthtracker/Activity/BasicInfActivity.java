@@ -33,7 +33,7 @@ public class BasicInfActivity extends AppCompatActivity {
         binding = ActivityBasicInforBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        dataFactorsModel.setSex(1);
+        dataFactorsModel.setSex("1");
 
         binding.basicIn4Man.setOnClickListener(v -> {
             binding.basicIn4Man.setBackgroundResource(R.drawable.shape_select_people);
@@ -42,7 +42,7 @@ public class BasicInfActivity extends AppCompatActivity {
             binding.basicIn4Woman.setBackgroundResource(R.drawable.shape_people);
             binding.basicIn4CheckWoman.setVisibility(View.GONE);
 
-            dataFactorsModel.setSex(1);
+            dataFactorsModel.setSex("1");
         });
 
         binding.basicIn4Woman.setOnClickListener(v -> {
@@ -52,7 +52,7 @@ public class BasicInfActivity extends AppCompatActivity {
             binding.basicIn4Man.setBackgroundResource(R.drawable.shape_people);
             binding.basicIn4CheckMan.setVisibility(View.GONE);
 
-           dataFactorsModel.setSex(0);
+           dataFactorsModel.setSex("0");
         });
 
         //Seekbar Age
@@ -62,7 +62,7 @@ public class BasicInfActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 int value = progress + 16;
                 binding.textAge.setText(String.valueOf(value));
-                dataFactorsModel.setAge(value);
+                dataFactorsModel.setAge(String.valueOf(value));
 
                 int padding = binding.basicIn4SeekbarAge.getPaddingLeft() + binding.basicIn4SeekbarAge.getPaddingRight();
                 int seekBarWidth = seekBar.getWidth() - padding;
@@ -130,20 +130,9 @@ public class BasicInfActivity extends AppCompatActivity {
         });
 
         binding.basicIn4BtnNext.setOnClickListener(v -> {
-            double heightInMeters = heightValue / 100.0;
-            double BMI = weightValue / Math.pow(heightInMeters,2);
-
-            if (BMI <30){
-                dataFactorsModel.setObesity(0);
-            }
-            else {
-                dataFactorsModel.setObesity(1);
-            }
-
             Map<String,Object> map = new HashMap<>();
             map.put("age",dataFactorsModel.getAge());
             map.put("sex",dataFactorsModel.getSex());
-            map.put("obesity",dataFactorsModel.getObesity());
 
             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("HealthFactors");
             databaseReference.child("factor").updateChildren(map);

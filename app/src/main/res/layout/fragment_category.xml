@@ -33,124 +33,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/category_text2"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="30dp">
 
         <TextView
-            android:id="@+id/category_textdiabetes"
+            android:id="@+id/category_textChestpaintype"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/diabetes"
-            android:fontFamily="@font/dm_sans_bold"
-            android:textSize="18sp" />
-
-        <RadioGroup
-            android:id="@+id/group_option_diabetes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/category_textdiabetes"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/category_diabetes_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:fontFamily="@font/dm_sans_bold"
-                android:textSize="16sp"
-                tools:ignore="HardcodedText" />
-
-            <RadioButton
-                android:id="@+id/category_diabetes_no"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:layout_marginStart="50dp"
-                android:fontFamily="@font/dm_sans_bold"
-                android:textSize="16sp"
-                tools:ignore="HardcodedText" />
-        </RadioGroup>
-
-        <TextView
-            android:id="@+id/category_textAlcohol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Alcohol Consumption"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/group_option_diabetes"
+            android:text="Chest Pain Type"
             android:fontFamily="@font/dm_sans_bold"
             android:textSize="18sp"
             tools:ignore="HardcodedText" />
 
         <RadioGroup
-            android:id="@+id/group_option_alcohol"
+            android:id="@+id/group_option_Chestpaintype"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/category_textAlcohol"
+            android:layout_below="@+id/category_textChestpaintype"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/category_alcohol_yes"
+                android:id="@+id/category_Chestpaintype_ta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Yes"
+                android:text="TA"
                 android:fontFamily="@font/dm_sans_bold"
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />
 
             <RadioButton
-                android:id="@+id/category_alcohol_no"
+                android:id="@+id/category_Chestpaintype_ata"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No"
-                android:layout_marginStart="50dp"
-                android:fontFamily="@font/dm_sans_bold"
-                android:textSize="16sp"
-                tools:ignore="HardcodedText" />
-        </RadioGroup>
-
-        <TextView
-            android:id="@+id/category_textDiet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Diet"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/group_option_alcohol"
-            android:fontFamily="@font/dm_sans_bold"
-            android:textSize="18sp"
-            tools:ignore="HardcodedText" />
-
-        <RadioGroup
-            android:id="@+id/group_option_diet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/category_textDiet"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/category_diet_unhealthy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Unhealthy"
-                android:fontFamily="@font/dm_sans_bold"
-                android:textSize="16sp"
-                tools:ignore="HardcodedText" />
-
-            <RadioButton
-                android:id="@+id/category_diet_average"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Average"
+                android:text="ATA"
                 android:layout_marginStart="30dp"
                 android:fontFamily="@font/dm_sans_bold"
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />
 
             <RadioButton
-                android:id="@+id/category_diet_healthy"
+                android:id="@+id/category_Chestpaintype_nap"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Healthy"
+                android:text="NAP"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_Chestpaintype_asy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ASY"
                 android:layout_marginStart="30dp"
                 android:fontFamily="@font/dm_sans_bold"
                 android:textSize="16sp"
@@ -158,25 +93,76 @@
         </RadioGroup>
 
         <TextView
-            android:id="@+id/category_textMedication"
+            android:id="@+id/category_textRegc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medication Use"
+            android:text="Resting Electrocardiogram"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/group_option_diet"
+            android:layout_below="@+id/group_option_Chestpaintype"
             android:fontFamily="@font/dm_sans_bold"
             android:textSize="18sp"
             tools:ignore="HardcodedText" />
 
         <RadioGroup
-            android:id="@+id/group_option_medication"
+            android:id="@+id/group_option_regc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/category_textMedication"
+            android:layout_below="@+id/category_textRegc"
+            android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/category_medication_yes"
+                android:id="@+id/category_regc_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_regc_abnormality"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:text="ST-T wave abnormality"
+                android:layout_marginStart="5dp"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextViewEdits" />
+
+            <RadioButton
+                android:id="@+id/category_regc_Hypertrophy"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:text="Left Ventricular Hypertrophy"
+                android:layout_marginStart="5dp"
+                android:inputType="textMultiLine"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText,TextViewEdits" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/category_textExerciseAngina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise Angina"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/group_option_regc"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/group_option_ExerciseAngina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_textExerciseAngina"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/category_ExerciseAngina_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Yes"
@@ -185,11 +171,58 @@
                 tools:ignore="HardcodedText" />
 
             <RadioButton
-                android:id="@+id/category_medication_no"
+                android:id="@+id/category_ExerciseAngina_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="No"
                 android:layout_marginStart="50dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/category_textSTlope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="slope of the peak exercise ST segment"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/group_option_ExerciseAngina"
+            android:fontFamily="@font/dm_sans_bold"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:id="@+id/group_option_STlope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_textSTlope"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/category_STlope_UpSloping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UpSloping"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/category_STlope_Flat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flat"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/dm_sans_bold"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+            <RadioButton
+                android:id="@+id/category_STlope_downsloping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DownSloping"
+                android:layout_marginStart="40dp"
                 android:fontFamily="@font/dm_sans_bold"
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />

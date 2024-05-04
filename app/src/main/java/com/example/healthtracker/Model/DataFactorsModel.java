@@ -1,157 +1,129 @@
 package com.example.healthtracker.Model;
 
 public class DataFactorsModel {
-    int Age,Sex,Cholesterol,Heart_Rate,Diabetes,Obesity,Alcohol_Consumption,
-            Exercise_Hours_Per_Week,Diet,Medication_Use,Stress_Level,Sedentary_Hours_Per_Day,Physical_Activity_Days_Per_Week,
-            Sleep_Hours_Per_Day,Diastolic_BP,Systolic_BP;
+    String age,sex,chest_pain_type,resting_bp_s,cholesterol,fasting_blood_sugar,
+            resting_ecg,max_heart_rate,exercise_angina,oldpeak,ST_slope,value_fasting_blood_sugar,testfeature;
 
     public DataFactorsModel() {
     }
 
-    public DataFactorsModel(int age, int sex, int cholesterol, int heart_Rate, int diabetes, int obesity, int alcohol_Consumption, int exercise_Hours_Per_Week, int diet, int medication_Use, int stress_Level, int sedentary_Hours_Per_Day, int physical_Activity_Days_Per_Week, int sleep_Hours_Per_Day, int diastolic_BP, int systolic_BP) {
-        Age = age;
-        Sex = sex;
-        Cholesterol = cholesterol;
-        Heart_Rate = heart_Rate;
-        Diabetes = diabetes;
-        Obesity = obesity;
-        Alcohol_Consumption = alcohol_Consumption;
-        Exercise_Hours_Per_Week = exercise_Hours_Per_Week;
-        Diet = diet;
-        Medication_Use = medication_Use;
-        Stress_Level = stress_Level;
-        Sedentary_Hours_Per_Day = sedentary_Hours_Per_Day;
-        Physical_Activity_Days_Per_Week = physical_Activity_Days_Per_Week;
-        Sleep_Hours_Per_Day = sleep_Hours_Per_Day;
-        Diastolic_BP = diastolic_BP;
-        Systolic_BP = systolic_BP;
+    public DataFactorsModel(String age, String sex, String chest_pain_type, String resting_bp_s, String cholesterol, String fasting_blood_sugar, String resting_ecg, String max_heart_rate, String exercise_angina, String oldpeak, String ST_slope, String value_fasting_blood_sugar, String testfeature) {
+        this.age = age;
+        this.sex = sex;
+        this.chest_pain_type = chest_pain_type;
+        this.resting_bp_s = resting_bp_s;
+        this.cholesterol = cholesterol;
+        this.fasting_blood_sugar = fasting_blood_sugar;
+        this.resting_ecg = resting_ecg;
+        this.max_heart_rate = max_heart_rate;
+        this.exercise_angina = exercise_angina;
+        this.oldpeak = oldpeak;
+        this.ST_slope = ST_slope;
+        this.value_fasting_blood_sugar = value_fasting_blood_sugar;
+        this.testfeature = testfeature;
     }
 
-    public int getAge() {
-        return Age;
+    public String getValue_fasting_blood_sugar() {
+        return value_fasting_blood_sugar;
     }
 
-    public void setAge(int age) {
-        Age = age;
+    public void setValue_fasting_blood_sugar(String value_fasting_blood_sugar) {
+        this.value_fasting_blood_sugar = value_fasting_blood_sugar;
     }
 
-    public int getSex() {
-        return Sex;
+    public String getTestfeature() {
+        return testfeature;
     }
 
-    public void setSex(int sex) {
-        Sex = sex;
+    public void setTestfeature(String testfeature) {
+        this.testfeature = testfeature;
     }
 
-    public int getCholesterol() {
-        return Cholesterol;
+    public String getAge() {
+        return age;
     }
 
-    public void setCholesterol(int cholesterol) {
-        Cholesterol = cholesterol;
+    public void setAge(String age) {
+        this.age = age;
     }
 
-    public int getHeart_Rate() {
-        return Heart_Rate;
+    public String getSex() {
+        return sex;
     }
 
-    public void setHeart_Rate(int heart_Rate) {
-        Heart_Rate = heart_Rate;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
-    public int getDiabetes() {
-        return Diabetes;
+    public String getChest_pain_type() {
+        return chest_pain_type;
     }
 
-    public void setDiabetes(int diabetes) {
-        Diabetes = diabetes;
+    public void setChest_pain_type(String chest_pain_type) {
+        this.chest_pain_type = chest_pain_type;
     }
 
-    public int getObesity() {
-        return Obesity;
+    public String getResting_bp_s() {
+        return resting_bp_s;
     }
 
-    public void setObesity(int obesity) {
-        Obesity = obesity;
+    public void setResting_bp_s(String resting_bp_s) {
+        this.resting_bp_s = resting_bp_s;
     }
 
-    public int getAlcohol_Consumption() {
-        return Alcohol_Consumption;
+    public String getCholesterol() {
+        return cholesterol;
     }
 
-    public void setAlcohol_Consumption(int alcohol_Consumption) {
-        Alcohol_Consumption = alcohol_Consumption;
+    public void setCholesterol(String cholesterol) {
+        this.cholesterol = cholesterol;
     }
 
-    public int getExercise_Hours_Per_Week() {
-        return Exercise_Hours_Per_Week;
+    public String getFasting_blood_sugar() {
+        return fasting_blood_sugar;
     }
 
-    public void setExercise_Hours_Per_Week(int exercise_Hours_Per_Week) {
-        Exercise_Hours_Per_Week = exercise_Hours_Per_Week;
+    public void setFasting_blood_sugar(String fasting_blood_sugar) {
+        this.fasting_blood_sugar = fasting_blood_sugar;
     }
 
-    public int getDiet() {
-        return Diet;
+    public String getResting_ecg() {
+        return resting_ecg;
     }
 
-    public void setDiet(int diet) {
-        Diet = diet;
+    public void setResting_ecg(String resting_ecg) {
+        this.resting_ecg = resting_ecg;
     }
 
-    public int getMedication_Use() {
-        return Medication_Use;
+    public String getMax_heart_rate() {
+        return max_heart_rate;
     }
 
-    public void setMedication_Use(int medication_Use) {
-        Medication_Use = medication_Use;
+    public void setMax_heart_rate(String max_heart_rate) {
+        this.max_heart_rate = max_heart_rate;
     }
 
-    public int getStress_Level() {
-        return Stress_Level;
+    public String getExercise_angina() {
+        return exercise_angina;
     }
 
-    public void setStress_Level(int stress_Level) {
-        Stress_Level = stress_Level;
+    public void setExercise_angina(String exercise_angina) {
+        this.exercise_angina = exercise_angina;
     }
 
-    public int getSedentary_Hours_Per_Day() {
-        return Sedentary_Hours_Per_Day;
+    public String getOldpeak() {
+        return oldpeak;
     }
 
-    public void setSedentary_Hours_Per_Day(int sedentary_Hours_Per_Day) {
-        Sedentary_Hours_Per_Day = sedentary_Hours_Per_Day;
+    public void setOldpeak(String oldpeak) {
+        this.oldpeak = oldpeak;
     }
 
-    public int getPhysical_Activity_Days_Per_Week() {
-        return Physical_Activity_Days_Per_Week;
+    public String getST_slope() {
+        return ST_slope;
     }
 
-    public void setPhysical_Activity_Days_Per_Week(int physical_Activity_Days_Per_Week) {
-        Physical_Activity_Days_Per_Week = physical_Activity_Days_Per_Week;
-    }
-
-    public int getSleep_Hours_Per_Day() {
-        return Sleep_Hours_Per_Day;
-    }
-
-    public void setSleep_Hours_Per_Day(int sleep_Hours_Per_Day) {
-        Sleep_Hours_Per_Day = sleep_Hours_Per_Day;
-    }
-
-    public int getDiastolic_BP() {
-        return Diastolic_BP;
-    }
-
-    public void setDiastolic_BP(int diastolic_BP) {
-        Diastolic_BP = diastolic_BP;
-    }
-
-    public int getSystolic_BP() {
-        return Systolic_BP;
-    }
-
-    public void setSystolic_BP(int systolic_BP) {
-        Systolic_BP = systolic_BP;
+    public void setST_slope(String ST_slope) {
+        this.ST_slope = ST_slope;
     }
 }

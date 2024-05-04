@@ -46,4 +46,6 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-database")
+    implementation libs.volley
+    implementation libs.dialogplus
 }
